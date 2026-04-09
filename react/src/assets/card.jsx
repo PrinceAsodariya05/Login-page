@@ -2,18 +2,18 @@ import React, { useState } from 'react'
 import '../App.css'
 
 const Card = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, Hii] = useState('')
+  const [password, Login] = useState('')
 
   const handleLogin = () => {
     console.log('Username:', username, 'Password:', password)
   }
 
-  const handleGoogleClick = () => {
+  const google= () => {
     window.open('https://accounts.google.com', '_blank')
   }
 
-  const handleFacebookClick = () => {
+  const facebook = () => {
     window.open('https://www.facebook.com', '_blank')
   }
 
@@ -51,13 +51,13 @@ const Card = () => {
         <img 
           src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" 
           alt="Google"
-          onClick={handleGoogleClick}
+          onClick={google}
           style={{ cursor: 'pointer' }}
         />
         <img 
           src="https://www.pngmart.com/files/23/Facebook-Logo-PNG-Isolated-HD.png" 
           alt="Facebook"
-          onClick={handleFacebookClick}
+          onClick={facebook}
           style={{ cursor: 'pointer' }}
         />
     </div>
