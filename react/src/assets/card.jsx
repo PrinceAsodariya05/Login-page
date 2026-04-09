@@ -21,21 +21,21 @@ const Card = () => {
     <>
     <div className="card">
     <div className="top">
-        <h1> Login page</h1>
+        <h1> Login</h1>
 
     </div>
     <div className="mid">
-        <h4> User name</h4>
+        <h3> User name</h3>
         <input 
           type="text" 
           placeholder="Enter username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <h4> password</h4>
+        <h3> Password</h3>
         <input 
           type="password" 
-          placeholder="Enter password"
+          placeholder="Enter Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
