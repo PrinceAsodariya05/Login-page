@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import '../App.css'
 
 const Card = () => {
-  const [username, Hii] = useState('')
-  const [password, Login] = useState('')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleLogin = () => {
     console.log('Username:', username, 'Password:', password)
